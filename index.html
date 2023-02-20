@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.css">
+    <title>Atlas</title>
+    <script type="module" defer src="js/appAtlas.js"></script>
+
+</head>
+
+<body class="titles">
+    <header class="container-fluid d-flex align-items-center">
+        <div class="container titles">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo col-auto">
+                    <button id="id_icon" class="btn">
+                        <img src="images/icon.png" alt="icon" width="50">
+                    </button>
+                </div>
+                <nav id="nav_open" class="col-auto align-items-center">
+                    <ul class="list-inline titles d-lg-flex  m-0">
+                        <li><a id="isr_btn" href="#">ISRAEL</a></li>
+                        <li><a id="usa_btn" href="#">USA</a></li>
+                        <li><a id="fra_btn" href="#">FRANCE</a></li>
+                        <li><a id="uk_btn" href="#">UK</a></li>
+                        <li><a id="tha_btn" href="#">THAILAND</a></li>
+                    </ul>
+                </nav>
+                <div class="col-auto">
+                    <input id="id_input" placeholder="Search country..." type="text">
+                    <button id="search_btn" class="btn-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div id="burger_btn" class="burger col-auto d-lg-none pt-3">
+                    <i class="fa fa-bars h1" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid d-flex align-items-center py-5 px-4 pb-4 text-white">
+        <div class="container">
+            <div id="id_row" class="row align-items-center justify-content-center">
+                <div class="p-4 col-lg-5" id="id_img">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="p-4 col-lg-5">
+                    <h3 id="country_id" class="display-6"></h3>
+                    <h4>POP: <span id="pop_id"></span></h4>
+                    <h4>Region: <span id="region_id"></span></h4>
+                    <h4>Languages: <span id="lang_id"></span></h4>
+                    <h4>Coin: <span id="coin_id"></span></h4>
+                    <h4>Capital: <span id="capi_id"></span></h4>
+                </div>
+
+
+                <div class="borders p-4 mx-4 col-lg-5">
+                    <div class="col-12 d-flex justify-content-center align-content-center">
+                        <h4>States with borders:<br><span id="border_id" class="row flex-wrap"></span></h4>
+                    </div>
+                </div>
+                <div class="google-Map p-3 col-lg-5">
+                    <iframe id="map_id" src="https://maps.google.com/maps?q=31.47,35.13&z=5&ie=UTF8&iwloc=&output=embed"
+                        width="400" height="350" style="border:0; border-radius: 15px" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid titles">
+        <div class="container titles">
+            <div class="row p-3">
+                <div class="box left text-white col-12 text-center">
+                    <h3 class="display-6">Fullstack Web Developer © Noa Falik 2022-2023</h3>
+                </div>
+                <div class="box right text-white col-12 text-center">
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/noa.falik/" target="_blank"><i class="fa fa-facebook-official"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/_noafalik_/" target="_blank"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/%D7%A0%D7%95%D7%A2%D7%94-%D7%A4%D7%9C%D7%99%D7%A7-607389266/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <!-- <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/burger.js"></script>
+</body>
+
+</html>

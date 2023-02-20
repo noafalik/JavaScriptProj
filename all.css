@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+.titles {
+    font-family: 'Libre Baskerville', serif;
+}
+
+body {
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+    max-width: 1300px;
+}
+
+header {
+    min-height: 80px;
+    background: rgba(64, 116, 128, 0.792);
+    /* top: 0;
+    left: 0; */
+    /* position: sticky; */
+    /* z-index: 9999999999; */
+    backdrop-filter: blur(6px);
+}
+
+header .logo .btn {
+    border: none;
+    background: transparent;
+}
+
+header .logo .btn img {
+    transition: 500ms;
+}
+
+header .logo .btn img:hover {
+    transform: scale(1.15);
+    color: white;
+}
+
+header .logo .btn:active {
+    border: none;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+    padding: 0 12px;
+    font-size: 1.25em;
+    transition: 800ms;
+    margin: 0 auto;
+    display: block;
+    z-index: 999999999999999999;
+    
+}
+
+header nav ul a:hover {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+    transform: scale(1.25)
+}
+
+header .row #id_search {
+    border-radius: 5px;
+}
+
+header .row .btn-search {
+    background: transparent;
+    border-radius: 25px;
+}
+
+/*  */
+
+main{
+    min-height: 700px;
+    background-image: url(images/img2.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    z-index: 0;
+}
+
+main .container{
+    min-height: 600px;
+    /* background: rgba(255, 255, 255, 0.726); */
+    background: rgba(12, 19, 20, 0.753);
+    /* backdrop-filter: blur(3px); */
+    border-radius: 5px;
+}
+
+main .google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+main .google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+/*  */
+
+footer {
+    background: rgb(0, 0, 0);
+    box-shadow: 5px 5px 15px 5px #000000;
+    min-height: 110px;
+}
+
+footer .row {
+    flex-direction: column;
+}
+
+footer .row .left h3 {
+    font-size: 1.4em;
+    color: rgb(64, 116, 128);
+    font-weight: bold;
+}
+
+footer .row .right {
+    min-width: 100px;
+}
+
+footer .row .right a {
+    color: rgb(64, 116, 128);
+    font-size: 1.5em;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 500px;
+    transition: 800ms;
+}
+
+footer .row .right a:hover {
+    transform: scale(1.2);
+    border: 1px solid #ffffff;
+}
+
+@media (max-width: 991px) {
+    header .row {
+        justify-content: space-between;
+    }
+
+
+    header .row nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: rgb(0, 0, 0);
+        text-align: center;
+        max-width: 180px;
+        width: 100%;
+        padding: 0px;
+
+        z-index: 999999999999999999999999999 !important;
+    }
+
+    header nav ul{
+        z-index: 999999999999999999999999999 !important;
+    }
+
+    header nav ul a {
+        display: block;
+        padding: 12px 8px;
+        border-bottom:1px solid grey ;
+        color: white;
+    }
+
+    header nav ul #tha_btn{
+        border-bottom:none;
+    }
+
+    header nav ul a:hover {
+        color: rgba(186, 149, 38, 0.884);
+        text-shadow: none;
+        transform: scale(1);
+
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main .borders #border_id {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:576px) {
+    header input{
+        width:160px ;
+    }
+
+    main #id_img img {
+        width: 230px;
+    }
+
+    main .google-Map #map_id {
+        width: 300px;
+    }
+
+
+}
+
+@media (max-width:415px) {
+    header input{
+        width:100px ;
+    }
+
+    main #id_img img{
+        width: 180px;
+    }
+
+    main .google-Map #map_id {
+        width: 220px;
+        padding: 2px;
+    }
+
+
+}
+
+@media (max-width:370px) {
+    header input{
+        width:110px ;
+    }
+
+
+
+}
